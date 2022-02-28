@@ -35,7 +35,7 @@ const AddCandidate = (props) => {
 
     useEffect(() => {
         if (Object.keys(contract).length === 0) return;
-        
+
         try {
             fetch();
             fetchCandidate();
@@ -91,7 +91,7 @@ const AddCandidate = (props) => {
                     color="secondary"
                     variant="contained"
                 >
-                    Registration
+                    Registration test
                 </Button>
             )}
         </>
@@ -161,20 +161,20 @@ const AddCandidate = (props) => {
                                                     {candidate.name}
                                                 </div>
                                                 <div className="addCandidate_status_bundle_btn">
-                                                {stateNumber != 0 ? (
-                                                    <></>
-                                                ): (
-                                                    <Button
-                                                        className="addCandidate_status_cancel_btn"
-                                                        onClick={() =>
-                                                            cancleRegistration(
-                                                                candidate.candidateId
-                                                            )
-                                                        }
-                                                    >
-                                                        cancel
-                                                    </Button>
-                                                )}
+                                                    {stateNumber != 0 ? (
+                                                        <></>
+                                                    ) : (
+                                                        <Button
+                                                            className="addCandidate_status_cancel_btn"
+                                                            onClick={() =>
+                                                                cancleRegistration(
+                                                                    candidate.candidateId
+                                                                )
+                                                            }
+                                                        >
+                                                            cancel
+                                                        </Button>
+                                                    )}
                                                 </div>
                                                 <div className="addCandidate_status_bundle_subtitle_slogan">
                                                     slogan
