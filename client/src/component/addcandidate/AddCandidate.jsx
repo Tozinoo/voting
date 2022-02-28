@@ -103,7 +103,7 @@ const AddCandidate = (props) => {
                 <div>Loading Web3, accounts, and contract...</div>
             ) : (
                 <>
-                    <h1>Add a new candidate test</h1>
+                    <h1>Add a new candidate test!!!</h1>
                     <TotalRegisters totalcan={candidateNumber} />
 
                     <form onSubmit={addCandidateHandler}>
