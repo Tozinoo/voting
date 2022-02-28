@@ -60,7 +60,9 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build
+        run: 
+          cd client
+          yarn build
 
       - name: Deploy
         run: aws s3 sync ./build s3://solidity-vote-system
