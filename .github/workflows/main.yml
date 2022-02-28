@@ -61,7 +61,7 @@ jobs:
 
       - name: Build
         run: 
-          cd client
+          cd client,
           yarn build
 
       - name: Deploy
